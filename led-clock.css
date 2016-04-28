@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+body {
+  background-color: black;
+}
+#led-clock {
+  -webkit-box-reflect: below 0px -webkit-linear-gradient(top, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.5));
+  margin: 0 auto;
+}
+#led-clock .digit,
+#led-clock .separator,
+#led-clock .digitmargin {
+  display: inline-block;
+}
+#led-clock .line {
+  display: table-row;
+}
+#led-clock .cell {
+  display: table-cell;
+}
+#led-clock .dot {
+  display: block;
+}
+
+/* size  */
+#led-clock .dot {
+  border-radius: 20%;
+}
+
+/* color  */
+#led-clock .dot {
+  background-color: hsl(0, 0%, 8%);
+}
+#led-clock .dot.on {
+  background-color: hsl(225, 100%, 50%);
+}
