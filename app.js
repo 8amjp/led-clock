@@ -26,7 +26,7 @@ $(function() {
 
   $(window).on("deviceorientation", function(e) {
     $("#led-clock .dot").css("background-color", "hsl(0, 0%, 8%)");
-    $("#led-clock .dot.on").css("background-color", "hsl(" + (event.gamma * 2).toFixed(1) + ", 50%, " + (50 + event.beta / 2).toFixed(1) + "%)");
+    $("#led-clock .dot.on").css("background-color", "hsl(" + (event.gamma * 2).toFixed(1) + ", 50%, 50%)");
   });
 
   function show() {
